@@ -19,24 +19,5 @@ O **Potencial Digital** é uma landing page cuidadosamente construída para ofer
 * **CSS3:** Estilização avançada para um design moderno e responsivo.
 * **JavaScript:** Interatividade e funcionalidades dinâmicas.
 
-## Como Utilizar
-
-Para visualizar este projeto localmente, siga estes passos:
-
-1.  Clone este repositório para a sua máquina:
-    ```bash
-    git clone [https://docs.github.com/articles/referencing-and-citing-content](https://docs.github.com/articles/referencing-and-citing-content)
-    ```
-2.  Navegue até a pasta do projeto:
-    ```bash
-    cd potencial-digital
-    ```
-3.  Abra o arquivo `index.html` no seu navegador web preferido.
-
-## Autor
-
-[Vitor Domingos]
-
----
 
 **Agradeço por conferir o Potencial Digital!** ✨
