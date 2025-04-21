@@ -1,6 +1,6 @@
 # Potencial Digital
 
-Uma landing page robusta e visualmente atraente, desenvolvida com HTML, CSS e JavaScript para impulsionar a sua presença online.
+Uma landing page robusta e visualmente atraente, desenvolvida com **HTML**, **CSS** e **JavaScript** para impulsionar a sua presença online.
 
 
 ## Sobre o Projeto
