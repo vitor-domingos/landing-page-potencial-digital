@@ -1,389 +1,410 @@
 /* Reset Básico e Configurações Globais */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth; /* Rolagem suave para links internos */
+  scroll-behavior: smooth; /* Rolagem suave para links internos */
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.7;
-    color: #333;
-    background-color: #f9f9f9;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.7;
+  color: #333;
+  background-color: #f9f9f9;
 }
 
 .container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-h1, h2, h3 {
-    line-height: 1.3;
-    margin-bottom: 1rem;
-    color: #2c3e50; /* Azul escuro */
+h1,
+h2,
+h3 {
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  color: #2c3e50; /* Azul escuro */
 }
 
 h2 {
-    text-align: center;
-    font-size: 2.2rem;
-    margin-bottom: 2.5rem;
-    position: relative;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+  position: relative;
 }
 
 /* Linha decorativa sob o H2 */
 h2::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 4px;
-    background-color: #3498db; /* Azul claro */
-    margin: 10px auto 0;
-    border-radius: 2px;
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #3498db; /* Azul claro */
+  margin: 10px auto 0;
+  border-radius: 2px;
 }
 
 p {
-    margin-bottom: 1rem;
-    color: #555;
+  margin-bottom: 1rem;
+  color: #555;
 }
 
 a {
-    text-decoration: none;
-    color: #3498db; /* Azul claro */
+  text-decoration: none;
+  color: #3498db; /* Azul claro */
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 section {
-    padding: 60px 0;
+  padding: 60px 0;
 }
 
 section:nth-of-type(even) {
-    background-color: #ffffff; /* Fundo branco para seções pares */
+  background-color: #ffffff; /* Fundo branco para seções pares */
 }
 
 /* Header */
 .header {
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 1rem 0;
-    position: sticky; /* Mantém o header fixo no topo */
-    top: 0;
-    z-index: 1000; /* Garante que fique sobre outros elementos */
-    width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+  position: sticky; /* Mantém o header fixo no topo */
+  top: 0;
+  z-index: 1000; /* Garante que fique sobre outros elementos */
+  width: 100%;
 }
 
 .header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header .logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #2c3e50;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2c3e50;
 }
 
 .header nav ul {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 .header nav ul li {
-    margin-left: 25px;
+  margin-left: 25px;
 }
 
 .header nav ul li a {
-    color: #555;
-    font-weight: 600;
-    transition: color 0.3s ease;
+  color: #555;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 .header nav ul li a:hover {
-    color: #3498db;
+  color: #3498db;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('images/hero-background.jpg') no-repeat center center/cover; /* Substitua pela sua imagem de fundo */
-    color: #ffffff;
-    text-align: center;
-    padding: 100px 0; /* Mais padding vertical */
-    min-height: 70vh; /* Altura mínima para ocupar boa parte da tela inicial */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)),
+    url("images/hero-background.jpg") no-repeat center center/cover; /* Substitua pela sua imagem de fundo */
+  color: #ffffff;
+  text-align: center;
+  padding: 100px 0; /* Mais padding vertical */
+  min-height: 70vh; /* Altura mínima para ocupar boa parte da tela inicial */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero h1 {
-    font-size: 2.8rem;
-    margin-bottom: 1rem;
-    color: #ffffff;
-    font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-weight: 700;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #ecf0f1; /* Cinza claro */
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ecf0f1; /* Cinza claro */
 }
 
 .hero-button {
-    font-size: 1.1rem;
-    padding: 15px 35px;
+  font-size: 1.1rem;
+  padding: 15px 35px;
 }
 
 /* Botões CTA (Call to Action) */
 .cta-button {
-    display: inline-block;
-    background-color: #3498db; /* Azul claro */
-    color: #ffffff;
-    padding: 12px 30px;
-    border-radius: 25px; /* Bordas arredondadas */
-    font-weight: 600;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: none;
-    cursor: pointer;
-    text-align: center;
+  display: inline-block;
+  background-color: #3498db; /* Azul claro */
+  color: #ffffff;
+  padding: 12px 30px;
+  border-radius: 25px; /* Bordas arredondadas */
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  text-align: center;
 }
 
 .cta-button:hover {
-    background-color: #2980b9; /* Azul um pouco mais escuro */
-    transform: translateY(-2px); /* Efeito sutil ao passar o mouse */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  background-color: #2980b9; /* Azul um pouco mais escuro */
+  transform: translateY(-2px); /* Efeito sutil ao passar o mouse */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .cta-button.secondary {
-    background-color: #ffffff;
-    color: #3498db;
-    border: 2px solid #3498db;
+  background-color: #ffffff;
+  color: #3498db;
+  border: 2px solid #3498db;
 }
 
 .cta-button.secondary:hover {
-    background-color: #f1f1f1;
-    color: #2980b9;
-    border-color: #2980b9;
-    transform: translateY(-2px);
+  background-color: #f1f1f1;
+  color: #2980b9;
+  border-color: #2980b9;
+  transform: translateY(-2px);
 }
 
 /* Seção Benefícios */
 .beneficios-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Grid responsivo */
-    gap: 30px;
-    text-align: center;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Grid responsivo */
+  gap: 30px;
+  text-align: center;
 }
 
 .beneficio-item {
-    background-color: #ffffff;
-    padding: 30px 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .beneficio-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 .beneficio-icon {
-    width: 60px; /* Tamanho do ícone */
-    height: 60px;
-    margin: 0 auto 15px auto;
-    /* Adicione estilos para o ícone aqui se necessário (cor, etc.) */
-    /* Exemplo: filter: invert(58%) sepia(68%) saturate(453%) hue-rotate(170deg) brightness(90%) contrast(89%); para colorir SVGs */
+  width: 60px; /* Tamanho do ícone */
+  height: 60px;
+  margin: 0 auto 15px auto;
+  /* Adicione estilos para o ícone aqui se necessário (cor, etc.) */
+  /* Exemplo: filter: invert(58%) sepia(68%) saturate(453%) hue-rotate(170deg) brightness(90%) contrast(89%); para colorir SVGs */
 }
 
 .beneficio-item h3 {
-    font-size: 1.4rem;
-    margin-bottom: 0.5rem;
-    color: #3498db;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #3498db;
 }
 
 .beneficio-item p {
-    font-size: 0.95rem;
-    color: #555;
+  font-size: 0.95rem;
+  color: #555;
 }
 
 /* Seção Depoimentos */
 .depoimentos {
-    background-color: #eaf2f8; /* Fundo azul bem claro */
+  background-color: #eaf2f8; /* Fundo azul bem claro */
 }
 
 .depoimentos-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
 }
 
 .depoimento {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    border-left: 5px solid #3498db; /* Detalhe lateral */
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-left: 5px solid #3498db; /* Detalhe lateral */
 }
 
 .depoimento blockquote {
-    font-style: italic;
-    color: #555;
-    margin-bottom: 1rem;
-    position: relative;
-    padding-left: 25px; /* Espaço para aspas */
+  font-style: italic;
+  color: #555;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 25px; /* Espaço para aspas */
 }
 
 /* Aspas decorativas */
 .depoimento blockquote::before {
-    content: '“';
-    font-size: 3rem;
-    color: #3498db;
-    position: absolute;
-    left: -5px;
-    top: -10px;
-    line-height: 1;
-    opacity: 0.8;
+  content: "“";
+  font-size: 3rem;
+  color: #3498db;
+  position: absolute;
+  left: -5px;
+  top: -10px;
+  line-height: 1;
+  opacity: 0.8;
 }
 
 .depoimento cite {
-    font-weight: 600;
-    color: #2c3e50;
-    display: block;
-    margin-top: 1rem;
-    text-align: right;
+  font-weight: 600;
+  color: #2c3e50;
+  display: block;
+  margin-top: 1rem;
+  text-align: right;
 }
 
 /* Seção CTA Final */
 .cta {
-    background-color: #3498db; /* Azul */
-    color: #ffffff;
-    text-align: center;
+  background-color: #3498db; /* Azul */
+  color: #ffffff;
+  text-align: center;
 }
 
 .cta h2 {
-    color:#00BFFF;
+  color: #00bfff;
 }
 
 .cta p {
-    color: #FF4500;
-    max-width: 600px;
-    margin: 0 auto 2rem auto;
+  color: #ff4500;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
 }
 
 .cta-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Espaço entre os botões */
-    flex-wrap: wrap; /* Quebra linha em telas menores */
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espaço entre os botões */
+  flex-wrap: wrap; /* Quebra linha em telas menores */
 }
 
 .cta .cta-button {
-    background-color: #F0FFF0;
-    color: #3498db;
-    border: 2px solid #ffffff;
+  background-color: #f0fff0;
+  color: #3498db;
+  border: 2px solid #ffffff;
 }
 
 .cta .cta-button:hover {
-     background-color: #FFDEAD;
-     color: #2980b9;
-     border-color: #FF6347;
+  background-color: #ffdead;
+  color: #2980b9;
+  border-color: #ff6347;
 }
 
 .cta .cta-button.secondary {
-    background-color: #F0F8FF;
-    color: #FFA500;
-    border: 2px solid #ffffff;
-    }
+  background-color: #f0f8ff;
+  color: #ffa500;
+  border: 2px solid #ffffff;
+}
 
-    .cta .cta-button.secondary:hover {
-        background-color:#FFFACD;   
-       border-color: #87CEFA;
-    }
+.cta .cta-button.secondary:hover {
+  background-color: #fffacd;
+  border-color: #87cefa;
+}
 
-    /* Footer */
-    .footer {
-        background-color: #2c3e50; /* Azul escuro */
-        color: #bdc3c7; /* Cinza claro */
-        text-align: center;
-        padding: 25px 0;
-        margin-top: 40px; /* Espaço antes do footer */
-    }
+/* Footer */
+.footer {
+  background-color: #2c3e50; /* Azul escuro */
+  color: #bdc3c7; /* Cinza claro */
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 40px; /* Espaço antes do footer */
+}
 
-    .footer p {
-        margin-bottom: 0.5rem;
-        font-size: 0.9rem;
-        color: 	#7CFC00;
-    }
- 
-    .footer a {
-        color: #ecf0f1; /* Branco suave */
-        margin: 0 10px;
-        font-size: 15px;
-        }
+.footer p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #7cfc00;
+}
 
-    .footer a:hover {
-        color: #3498db; /* Azul ao passar o mouse */
-    }
+.footer a {
+  color:#00FF00;
+  margin: 0 10px;
+  font-size: 15px;
+}
 
-    .credits{
-  color:#FF7F50;
-    }
+.footer a:hover {
+  color: #e4c0a8;
+}
 
-    /* --- Responsividade --- */
-    @media (max-width: 768px) {
-        h1 { font-size: 2.2rem; }
-        h2 { font-size: 1.8rem; }
-        .hero h1 { font-size: 2.5rem; }
-        .hero p { font-size: 1.1rem; }
+.credits {
+  color: #ff7f50;
+}
 
-        .header .container {
-            flex-direction: column;
-            align-items: center;
-        }
+/* --- Responsividade --- */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero p {
+    font-size: 1.1rem;
+  }
 
-        .header nav ul {
-            margin-top: 1rem;
-            padding-left: 0; /* Remover padding padrão de ul */
-        }
+  .header .container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-        .header nav ul li {
-            margin: 0 10px; /* Menor espaçamento entre itens do menu */
-        }
+  .header nav ul {
+    margin-top: 1rem;
+    padding-left: 0; /* Remover padding padrão de ul */
+  }
 
-        .beneficios-grid,
-        .depoimentos-grid {
-            grid-template-columns: 1fr; /* Coluna única em telas menores */
-        }
+  .header nav ul li {
+    margin: 0 10px; /* Menor espaçamento entre itens do menu */
+  }
 
-        .cta-buttons {
-            flex-direction: column;
-            align-items: center;
-        }
+  .beneficios-grid,
+  .depoimentos-grid {
+    grid-template-columns: 1fr; /* Coluna única em telas menores */
+  }
 
-        .cta-buttons .cta-button {
-            width: 80%; /* Botões ocupam mais largura */
-            margin-bottom: 10px; /* Espaço entre botões empilhados */
-        }
-    }
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    @media (max-width: 480px) {
-        .hero h1 { font-size: 2rem; }
-        .hero p { font-size: 1rem; }
-        .hero-button { padding: 12px 25px; font-size: 1rem;}
-        h2 { font-size: 1.6rem; }
-    }
+  .cta-buttons .cta-button {
+    width: 80%; /* Botões ocupam mais largura */
+    margin-bottom: 10px; /* Espaço entre botões empilhados */
+  }
+}
 
-    
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .hero-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+}
